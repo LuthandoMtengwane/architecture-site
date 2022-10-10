@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  height: calc(100vh - 100px);
+
+  img {
+    object-fit: cover;
+    max-width: 100%;
+    height: calc(100vh - 12rem);
+  }
+
+  @media (max-width: 40em) {
+    img {
+      width: 90%;
+    }
+  }
+}

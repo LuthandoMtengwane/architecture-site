@@ -1,0 +1,75 @@
+@import "../home.scss";
+
+.navbar {
+  font-size: 0.9rem;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  color: #365071;
+  font-family: "Poppins", sans-serif;
+  @media (min-width: 1920px) {
+    font-size: 1.1rem;
+  }
+  @media (max-width: 1080px) {
+    padding: 0 30px;
+    font-size: 1.6rem;
+  }
+  @media (max-width: 960px) {
+    padding: 0 12px;
+    height: 100px;
+    font-size: 1.2rem;
+  }
+
+  .inner-navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 5px;
+      @media (min-width: 1920px) {
+        font-size: 3.2rem;
+        flex: 4;
+      }
+      @media (max-width: 1080px) {
+        font-size: 2rem;
+        flex: 4;
+      }
+      @media (max-width: 428px) {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        flex: 4;
+      }
+      span {
+        font-weight: 200;
+      }
+    }
+    .nav {
+      @media (max-width: 1080px) {
+        display: none;
+      }
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 5%;
+      transform: translateX(5%);
+      li {
+        list-style: none;
+        font-weight: 300;
+        margin: 0 40px;
+        margin-left: -1rem;
+        a {
+          text-decoration: none;
+          color: #365071;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
